@@ -39,43 +39,43 @@ class ViewController: UIViewController {
 
     @IBAction func showNext(_ sender: UIButton) {
         switch lbGarrafa.text!{
-            case "Vinho TD":
-                lbGarrafa.text! = "Vinho TS"
+            case "TintoDoce":
+                lbGarrafa.text! = "TintoSeco"
                 tfQuant.text! = ""
-            case "Vinho TS":
-                lbGarrafa.text! = "Vinho BD"
+            case "TintoSeco":
+                lbGarrafa.text! = "BrancoDoce"
                 tfQuant.text! = ""
-            case "Vinho BD":
-                lbGarrafa.text! = "Vinho BS"
+            case "BrancoDoce":
+                lbGarrafa.text! = "BrancoSeco"
                 tfQuant.text! = ""
             default:
-                lbGarrafa.text! = "Vinho TD"
+                lbGarrafa.text! = "TintoDoce"
                 tfQuant.text! = ""
         }
     }
     @IBAction func showPrev(_ sender: UIButton) {
         switch lbGarrafa.text!{
-        case "Vinho TD":
-            lbGarrafa.text! = "Vinho BS"
+        case "TintoDoce":
+            lbGarrafa.text! = "BrancoSeco"
             tfQuant.text! = ""
-        case "Vinho BS":
-            lbGarrafa.text! = "Vinho BD"
+        case "BrancoSeco":
+            lbGarrafa.text! = "BrancoDoce"
             tfQuant.text! = ""
-        case "Vinho BD":
-            lbGarrafa.text! = "Vinho TS"
+        case "BrancoDoce":
+            lbGarrafa.text! = "TintoSeco"
             tfQuant.text! = ""
         default:
-            lbGarrafa.text! = "Vinho TD"
+            lbGarrafa.text! = "TintoDoce"
             tfQuant.text! = ""
         }
     }
     @IBAction func confirm(_ sender: UIButton) {
         switch lbGarrafa.text!{
-        case "Vinho TD":
+        case "TintoDoce":
            VinhoTD()
-        case "Vinho TS":
+        case "TintoSeco":
            VinhoTS()
-        case "Vinho BD":
+        case "BrancoDoce":
            VinhoBD()
         default:
            VinhoBS()
